@@ -1,0 +1,42 @@
+<!-- 
+Author: Noah Ahmed
+Date: 11/12/19
+Course Name:CST205
+Description: This is the home page that shows three random images and
+                their titles as urls.
+  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+  </head>
+  <body>
+      <div class="container">
+          <br>
+          <h1>Welcome to Wiki Discover</h1>
+        
+          <div class="well">
+              <br>
+              <h4>There's a whole lot in the Universe, so why not explore?</h4>
+                <p>We discover a random article among the millions that are on Wikipedia, <br>
+                and give you the opportunity to explore them if you find them interesting!</p>
+              <h2>Would you like to read about {{title}}?</h2>
+              <form action="https://en.wikipedia.org/wiki/{{linkT}}" method="get">
+                <button type="submit">Yes, Im vibin with it!</button>
+             </form>
+             <form action="https://en.wikipedia.org/wiki/{{linkT}}" method="get" target="_blank">
+                <button type="submit">Yes, Im vibin with it! I want it on a new tab though.</button>
+             </form>
+            
+              <input type="button" value="Nah, I'm not Vibin with it, What else ya got?" onClick="location.href=location.href">
+        
+        </div>
+        
+        </div>
+  </body>
+  </html>
